@@ -64,7 +64,8 @@ Object.keys(ALGORITHMS).forEach((elem, index) => {
 });
 
 select.selectedIndex = 0;
-randomInput.placeholder = `Enter a number between 5 and 17`;
+randomInputInfo.innerHTML = `Enter a number between 5 and 17`;
+randomInput.placeholder = `5 - 17`;
 
 function fallbackCopyTextToClipboard(text) {
     var textArea = document.createElement("textarea");
@@ -128,7 +129,8 @@ const insertSpecialSymbol = (hash, position) => {
 
 select.addEventListener('change', () => {
     const maxLen = ALGORITHMS[select.value].length - 15;
-    randomInput.placeholder = `Enter a number between 5 and ${maxLen}`;
+    randomInputInfo.innerHTML = `Enter a number between 5 and ${maxLen}`;
+    randomInput.placeholder = `5 - ${maxLen}`;
 });
 
 submitButton.addEventListener('click', () =>{
