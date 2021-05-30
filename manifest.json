@@ -1,0 +1,10 @@
+{
+    "name": "Generate strong password",
+    "description": "Generates a strong password based on the supplied algorithm, random number and password string",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": ["storage"],
+    "action": {
+        "default_popup": "index.html"
+    }
+}
